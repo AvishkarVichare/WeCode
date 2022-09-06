@@ -1,11 +1,13 @@
 import React from 'react'
-import { Link , useLocation} from 'react-router-dom'
+import { Link, useLocation, useNavigate} from 'react-router-dom'
+
 
 const Navbar = () => {
 
     let locate = useLocation();
-    console.log(locate.pathname)
+    console.log(locate.pathname);
 
+    let navigate = useNavigate();
 
   return (
     <>
@@ -43,7 +45,7 @@ const Navbar = () => {
                             Contact
                         </a>
                     </li>
-                    <button className=' bg-red-500 hover:bg-[#BF3312] text-white p-2 rounded-2xl text-[19px] font-bold'>
+                    <button onClick={()=>{navigate('/signup')}} className=' bg-red-500 hover:bg-[#BF3312] text-white p-2 rounded-2xl text-[19px] font-bold'>
                         Sign Up
                     </button>
                 </ul>
