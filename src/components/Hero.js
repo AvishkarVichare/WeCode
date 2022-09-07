@@ -7,10 +7,10 @@ const Hero = () => {
     
 <div className='px-[120px] py-12'>
 
-<h1 className=' text-yellow-600 font-bold text-center'>
-<span className='text-[7rem] text-yellow-500'>
+<h1 className=' text-yellow-600 font-bold text-center'  style={{color:"lime"}}>
+<span className='text-[7rem]'>
 We</span>
-<span className='text-[6rem] text-yellow-800'>
+<span className='text-[6rem] text-green-800 ' >
 Code
 </span>
 <br/>

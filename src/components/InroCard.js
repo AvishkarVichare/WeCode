@@ -18,7 +18,7 @@ const InroCard = (props) => {
       
         </h4>
         <p className='text-[#50DBB4] mt-3'>
-            Share your code live with anyone with live editing.
+            {props.description}
         </p>
       <div className="flex">
 

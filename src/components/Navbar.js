@@ -16,32 +16,33 @@ const Navbar = () => {
             <div className="flex items-center justify-between">
                 <div>
                     <h1  className='text-[2rem] font-bold'>
-                        <span className='text-yellow-500'>
+                        <span className='text-yellow-500'  style={{color:"lime"}}>
                             We
                         </span>
-                        <span className='text-yellow-800'>
+                        <span className='text-yellow-800 text-green-800 '>
                             Code
                         </span>
                     </h1>
                 </div>
                 <ul className='flex gap-12 items-center'>
                     <li  className=''>
-                        <Link className='text-[19px]' style={locate.pathname=='/'?{'color':'#fff'}:{'color':'#93730d'}} to='/'>
+                        <Link className='text-[19px]' style={locate.pathname=='/'?{'color':'#fff'}:{'color':'#1C8D73'}} to='/'>
                             Home
                         </Link>
+                
                     </li>
                     <li  className=''>
-                        <Link className='text-[19px]' style={locate.pathname=='/Community'?{'color':'#fff'}:{'color':'#93730d'}} to='/Community'>
+                        <Link className='text-[19px]' style={locate.pathname=='/Community'?{'color':'#fff'}:{'color':'#1C8D73'}} to='/Community'>
                             Community
                         </Link>
                     </li>
                     <li className=''>
-                        <Link className='text-[19px]' to='/about' style={locate.pathname=='/about'?{'color':'#fff'}:{'color':'#93730d'}}> 
+                        <Link className='text-[19px]' to='/about' style={locate.pathname=='/about'?{'color':'#fff'}:{'color':'#1C8D73'}}> 
                             About Us
                         </Link>
                     </li>
                     <li className=''>
-                        <a className='text-[19px]' href='#' style={locate.pathname=='/contact'?{'color':'#fff'}:{'color':'#93730d'}}>
+                        <a className='text-[19px]' href='#' style={locate.pathname=='/contact'?{'color':'#fff'}:{'color':'#1C8D73'}}>
                             Contact
                         </a>
                     </li>
